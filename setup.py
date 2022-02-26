@@ -47,14 +47,15 @@ print("VERSION: " + version_string)
 print("GIT SHA: " + GIT_SHA)
 print("-==-" * 15)
 
-VERSION_INFO_FILE = os.path.join(BASE_DIR, "superset", "static", "version_info.json")
+VERSION_INFO_FILE = os.path.join(
+    BASE_DIR, "superset", "static", "version_info.json")
 
 with open(VERSION_INFO_FILE, "w") as version_file:
     json.dump(version_info, version_file)
 
 
 setup(
-    name="apache-superset",
+    name="sage-superset",
     description="A modern, enterprise-ready business intelligence web application",
     long_description=long_description,
     long_description_content_type="text/markdown",
